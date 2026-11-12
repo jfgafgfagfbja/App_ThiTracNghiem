@@ -1,0 +1,27 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Cau hinh rieng cua Android Studio tren tung may
+/.idea/
+
+# File xuat ban
+*.apk
+*.aab
+
+# Khoa ky ung dung - TUYET DOI khong commit
+*.jks
+*.keystore
+keystore.properties

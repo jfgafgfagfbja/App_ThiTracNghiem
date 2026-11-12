@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nen"
+    android:fillViewport="true"
+    tools:context=".DangNhapActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <!-- ===== LOGO ===== -->
+        <TextView
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_avatar"
+            android:gravity="center"
+            android:text="Q"
+            android:textColor="@color/white"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:letterSpacing="0.12"
+            android:text="QUIZ"
+            android:textColor="@color/nhan_cyan"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Ứng dụng trắc nghiệm"
+            android:textColor="@color/chu_mo"
+            android:textSize="13sp" />
+
+        <!-- ===== THE DANG NHAP ===== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_the"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.08"
+                android:text="ĐĂNG NHẬP"
+                android:textColor="@color/nhan_cyan"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Tên đăng nhập"
+                android:textColor="@color/chu_mo"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edtTenDangNhap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:autofillHints="username"
+                android:background="@drawable/bg_o_nhap"
+                android:hint="ví dụ: sen23ct1"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="14dp"
+                android:textColor="@color/chu"
+                android:textColorHint="@color/chu_mo"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Mật khẩu"
+                android:textColor="@color/chu_mo"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edtMatKhau"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:autofillHints="password"
+                android:background="@drawable/bg_o_nhap"
+                android:hint="nhập mật khẩu"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="14dp"
+                android:textColor="@color/chu"
+                android:textColorHint="@color/chu_mo"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/cbHienMatKhau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:buttonTint="@color/nhan_cyan"
+                android:text="Hiện mật khẩu"
+                android:textColor="@color/chu_mo"
+                android:textSize="13sp" />
+
+            <CheckBox
+                android:id="@+id/cbGhiNho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/nhan_cyan"
+                android:checked="true"
+                android:text="Ghi nhớ đăng nhập"
+                android:textColor="@color/chu_mo"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tvThongBao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/do_sai"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDangNhap"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_button"
+                android:letterSpacing="0.05"
+                android:text="ĐĂNG NHẬP"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="18dp"
+                android:background="@color/vien" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center"
+                android:text="Chưa có tài khoản?"
+                android:textColor="@color/chu_mo"
+                android:textSize="12sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDangKy"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_button_phu"
+                android:text="ĐĂNG KÝ TÀI KHOẢN MỚI"
+                android:textColor="@color/nhan_cyan"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:text="Tài khoản được lưu trong SQLite trên máy bạn.&#10;Ứng dụng chạy hoàn toàn offline."
+            android:textColor="@color/chu_mo"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+</ScrollView>

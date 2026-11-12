@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nen"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ===== THE: QUAN LY CHU DE ===== -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_the"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.08"
+                    android:text="CHỦ ĐỀ"
+                    android:textColor="@color/nhan_cyan"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spChuDeQT"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_o_nhap"
+                        android:padding="10dp"
+                        android:popupBackground="@color/nen_the" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnXoaChuDe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/bg_button_phu"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:text="XOÁ"
+                        android:textColor="@color/do_sai"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edtChuDeMoi"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_o_nhap"
+                        android:hint="Tên chủ đề mới"
+                        android:importantForAutofill="no"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textColor="@color/chu"
+                        android:textColorHint="@color/chu_mo"
+                        android:textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnThemChuDe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/bg_button"
+                        android:paddingStart="14dp"
+                        android:paddingEnd="14dp"
+                        android:text="THÊM"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- ===== THE: NOI DUNG CAU HOI ===== -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_the"
+                android:orientation="vertical"
+                android:padding="14dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.08"
+                    android:text="CÂU HỎI"
+                    android:textColor="@color/nhan_cyan"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtNoiDung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bg_o_nhap"
+                    android:gravity="top|start"
+                    android:hint="Nội dung câu hỏi"
+                    android:importantForAutofill="no"
+                    android:inputType="textMultiLine"
+                    android:minLines="2"
+                    android:padding="10dp"
+                    android:textColor="@color/chu"
+                    android:textColorHint="@color/chu_mo"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edtDa1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_o_nhap"
+                    android:hint="A."
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="@color/chu"
+                    android:textColorHint="@color/chu_mo"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edtDa2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_o_nhap"
+                    android:hint="B."
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="@color/chu"
+                    android:textColorHint="@color/chu_mo"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edtDa3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_o_nhap"
+                    android:hint="C."
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="@color/chu"
+                    android:textColorHint="@color/chu_mo"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/edtDa4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_o_nhap"
+                    android:hint="D."
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="@color/chu"
+                    android:textColorHint="@color/chu_mo"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Đáp án đúng"
+                    android:textColor="@color/chu_mo"
+                    android:textSize="12sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgDung"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbD1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/nhan_cyan"
+                        android:checked="true"
+                        android:text="A"
+                        android:textColor="@color/chu" />
+
+                    <RadioButton
+                        android:id="@+id/rbD2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/nhan_cyan"
+                        android:text="B"
+                        android:textColor="@color/chu" />
+
+                    <RadioButton
+                        android:id="@+id/rbD3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/nhan_cyan"
+                        android:text="C"
+                        android:textColor="@color/chu" />
+
+                    <RadioButton
+                        android:id="@+id/rbD4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/nhan_cyan"
+                        android:text="D"
+                        android:textColor="@color/chu" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- ===== NUT THAO TAC (luon nhin thay) ===== -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnThem"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button"
+            android:text="THÊM"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSua"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_phu"
+            android:text="SỬA"
+            android:textColor="@color/nhan_cyan"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnXoa"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_phu"
+            android:text="XOÁ"
+            android:textColor="@color/do_sai"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLamMoi"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_phu"
+            android:text="LÀM MỚI"
+            android:textColor="@color/chu_mo"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSoCauQT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="6dp"
+        android:text="Danh sách câu hỏi"
+        android:textColor="@color/chu_mo"
+        android:textSize="12sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/lvCauHoi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_the"
+            android:divider="@color/vien"
+            android:dividerHeight="1dp"
+            android:padding="4dp" />
+
+        <LinearLayout
+            android:id="@+id/khoiTrongCauHoi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_the"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chủ đề này chưa có câu hỏi"
+                android:textColor="@color/chu"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:paddingTop="8dp"
+                android:text="Điền nội dung và 4 đáp án ở trên rồi bấm THÊM, hoặc bấm NHẬP TỪ FILE để nạp hàng loạt."
+                android:textColor="@color/chu_mo"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNguoiDung"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_button_phu"
+        android:text="QUẢN LÝ NGƯỜI DÙNG"
+        android:textColor="@color/nhan_tim"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNhapFile"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button"
+            android:text="NHẬP TỪ FILE"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnXuatFile"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_phu"
+            android:text="XUẤT RA FILE"
+            android:textColor="@color/nhan_cyan"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

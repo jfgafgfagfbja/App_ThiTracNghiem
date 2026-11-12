@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nen"
+    android:fillViewport="true"
+    tools:context=".DangKyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:letterSpacing="0.1"
+            android:text="TẠO TÀI KHOẢN"
+            android:textColor="@color/nhan_tim"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Tài khoản mới có vai trò Học viên: làm bài, xem lịch sử và thống kê của riêng mình."
+            android:textColor="@color/chu_mo"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_the"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Họ và tên"
+                android:textColor="@color/chu_mo"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edtHoTen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_o_nhap"
+                android:hint="ví dụ: Nguyễn Đăng Sen"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName|textCapWords"
+                android:maxLines="1"
+                android:padding="14dp"
+                android:textColor="@color/chu"
+                android:textColorHint="@color/chu_mo"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Tên đăng nhập"
+                android:textColor="@color/chu_mo"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edtTenDangNhapMoi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_o_nhap"
+                android:hint="chữ không dấu, số, dấu gạch dưới"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="14dp"
+                android:textColor="@color/chu"
+                android:textColorHint="@color/chu_mo"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Mật khẩu"
+                android:textColor="@color/chu_mo"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edtMatKhauMoi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_o_nhap"
+                android:hint="ít nhất 4 ký tự"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="14dp"
+                android:textColor="@color/chu"
+                android:textColorHint="@color/chu_mo"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Nhập lại mật khẩu"
+                android:textColor="@color/chu_mo"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edtMatKhauLai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_o_nhap"
+                android:hint="nhập lại cho khớp"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="14dp"
+                android:textColor="@color/chu"
+                android:textColorHint="@color/chu_mo"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvThongBaoDangKy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@color/do_sai"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnTaoTaiKhoan"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_button"
+            android:letterSpacing="0.05"
+            android:text="TẠO TÀI KHOẢN"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnQuayLai"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_button_phu"
+            android:text="QUAY LẠI ĐĂNG NHẬP"
+            android:textColor="@color/chu_mo"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

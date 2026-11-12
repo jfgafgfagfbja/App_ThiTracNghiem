@@ -1,0 +1,9 @@
+# Chuan hoa xuong dong: trong kho luu LF, tren Windows checkout ra CRLF
+* text=auto eol=lf
+
+# File nhi phan - khong dong vao chuyen doi xuong dong
+*.png  binary
+*.jpg  binary
+*.webp binary
+*.jar  binary
+*.apk  binary

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="22dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="22dp"
+    android:paddingBottom="4dp">
+
+    <EditText
+        android:id="@+id/edtMkCu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_o_nhap"
+        android:hint="Mật khẩu hiện tại"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="14dp"
+        android:textColor="@color/chu"
+        android:textColorHint="@color/chu_mo"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edtMkMoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_o_nhap"
+        android:hint="Mật khẩu mới (từ 4 ký tự)"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="14dp"
+        android:textColor="@color/chu"
+        android:textColorHint="@color/chu_mo"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edtMkLai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_o_nhap"
+        android:hint="Nhập lại mật khẩu mới"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="14dp"
+        android:textColor="@color/chu"
+        android:textColorHint="@color/chu_mo"
+        android:textSize="15sp" />
+
+</LinearLayout>

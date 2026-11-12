@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- ===== Bang mau SANG ===== -->
+    <color name="nen">#FFF4F7FC</color>        <!-- nen man hinh, xam xanh rat nhat -->
+    <color name="nen_the">#FFFFFFFF</color>    <!-- nen the/khoi noi dung -->
+    <color name="nen_o_nhap">#FFF1F5FA</color> <!-- nen o nhap lieu -->
+    <color name="vien">#FFDCE3ED</color>       <!-- vien manh -->
+
+    <color name="chu">#FF1B2437</color>        <!-- chu chinh, xanh den -->
+    <color name="chu_mo">#FF64748B</color>     <!-- chu phu, xam xanh -->
+
+    <color name="nhan_cyan">#FF0E8FA8</color>  <!-- nhan 1, cyan dam de doc tren nen sang -->
+    <color name="nhan_tim">#FF7C3AED</color>   <!-- nhan 2 -->
+
+    <!-- Ket qua dung / sai -->
+    <color name="xanh_dung">#FF15803D</color>
+    <color name="nen_dung">#FFE7F7ED</color>
+    <color name="do_sai">#FFC62828</color>
+    <color name="nen_sai">#FFFDECEC</color>
+
+    <!-- Giu ten cu de moi layout van bien dich duoc -->
+    <color name="tim_dam">#FF7C3AED</color>
+    <color name="tim_nhat">#FFEEF2FF</color>
+    <color name="xanh_header">#FFFFFFFF</color>
+    <color name="nen_dongho">#FFF1F5FA</color>
+    <color name="nen_saphut">#FFFDECEC</color>
+    <color name="vang_dongho">#FFF1F5FA</color>
+    <color name="do_saphut">#FFFDECEC</color>
+</resources>

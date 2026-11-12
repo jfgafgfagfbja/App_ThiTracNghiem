@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nen"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/tvTongQuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_the"
+        android:lineSpacingExtra="6dp"
+        android:padding="16dp"
+        android:textColor="@color/chu"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.08"
+        android:paddingTop="14dp"
+        android:paddingBottom="8dp"
+        android:text="THEO TỪNG CHỦ ĐỀ"
+        android:textColor="@color/nhan_cyan"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/lvThongKe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_the"
+            android:divider="@color/vien"
+            android:dividerHeight="1dp"
+            android:padding="4dp" />
+
+        <LinearLayout
+            android:id="@+id/khoiTrongThongKe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_the"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chưa có dữ liệu thống kê"
+                android:textColor="@color/chu"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="4dp"
+                android:paddingTop="8dp"
+                android:text="Làm ít nhất một bài để xem điểm trung bình và tỷ lệ trả lời đúng theo từng chủ đề."
+                android:textColor="@color/chu_mo"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnXuatBaoCao"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_button"
+        android:text="XUẤT BÁO CÁO RA FILE"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
